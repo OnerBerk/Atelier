@@ -1,10 +1,10 @@
-.players-main{
+.players-main {
   width: 100%;
   padding-left: 7.5vw;
   display: grid;
   grid-auto-rows: 20vh 80vh;
 
-  .search-container{
+  .search-container {
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -12,9 +12,21 @@
     padding-bottom: 2em;
     margin-bottom: 1em;
   }
-  .players{
+
+  .players {
     overflow-x: hidden;
     overflow-y: auto;
     width: 69%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .players-main {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    align-items: center;
+
+    z-index: 1000;
   }
 }

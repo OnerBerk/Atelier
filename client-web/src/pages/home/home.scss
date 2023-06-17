@@ -17,3 +17,20 @@
     }
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .home-main {
+    position: relative;
+    display: flex;
+  }
+  .home-right {
+    position: absolute;
+    height: 100vh;
+
+    img {
+      z-index: 1;
+    }
+  ;
+
+  }
+}

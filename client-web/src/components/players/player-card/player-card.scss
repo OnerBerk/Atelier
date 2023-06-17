@@ -69,3 +69,15 @@
     }
   }
 }
+@media only screen and (max-width: 768px) {
+  .player-card-main{
+    .player-infos{
+      .player-name{
+        font-size: 0.85em;
+      }
+      .info{
+        font-size: 0.5em;
+      }
+    }
+  }
+}

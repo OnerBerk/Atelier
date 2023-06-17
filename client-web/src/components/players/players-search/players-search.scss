@@ -7,9 +7,16 @@
   outline: none;
   border: none;
   color: #FFFFFF;
-  padding-left:1em ;
+  padding-left: 1em;
 }
-.player-search::placeholder{
+
+.player-search::placeholder {
   color: #edb06f;
   font-family: mu-bold, serif;
+}
+
+@media only screen and (max-width: 768px) {
+  .player-search {
+    font-size: 1em;
+  }
 }
