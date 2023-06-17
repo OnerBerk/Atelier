@@ -7,10 +7,9 @@ const PRoutes = () => {
         <div>
             <Routes>
                 <Route path='/' element={<Home/>}/>
-                <Route path='/detail/:name' element={<Details/>}/>
+                <Route path='/detail/:id/:name' element={<Details/>}/>
             </Routes>
         </div>
     )
 }
-
 export default PRoutes

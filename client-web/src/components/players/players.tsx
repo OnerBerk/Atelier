@@ -19,7 +19,7 @@ const Players = ({playersList}: PlayersProps) => {
             <div className="players">
                 {returnFilteredList(playersList, search).map((player: Player) => {
                     return (
-                        <PlayerCard player={player}/>
+                        <PlayerCard key={player.id} player={player}/>
                     )
                 })}
             </div>

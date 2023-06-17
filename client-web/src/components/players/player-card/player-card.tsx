@@ -8,7 +8,8 @@ type PlayerCardProps = {
 const PlayerCard = (props: PlayerCardProps) => {
     const navigate = useNavigate()
     return (
-        <div onClick={() => navigate(`/detail/${props.player.firstname}`)} className='player-card-main'>
+        <div onClick={() => navigate(`/detail/${props.player.id}/${props.player.firstname}`)}
+             className='player-card-main'>
             <div className='img-container'>
                 <img
                     alt={`${props.player.firstname} ${props.player.firstname}`}

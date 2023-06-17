@@ -1,4 +1,179 @@
+@import "../../bases";
+
 .detail-main {
   height: 100vh;
   background-color: #51321d;
+  display: grid;
+  grid-auto-rows: 13vh 87vh;
+
+  .detail-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      cursor: pointer;
+      height: 7vh;
+      width: auto;
+    }
+  }
+
+  .detail-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .detail-paper {
+      position: relative;
+      width: 80%;
+      height: 87vh;
+      display: grid;
+      grid-template-columns: 17% 83%;
+      background-color: #FFFFFF;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+
+      .crop {
+        width: 100%;
+        height: 85vh;
+        left: -10vh;
+        overflow: hidden;
+
+        img {
+          position: absolute;
+          margin-left: -8em;
+          height: 87vh;
+          object-fit: contain;
+          left: 0;
+          aspect-ratio: auto;
+        }
+
+        .venus {
+          margin-left: -22em;
+        }
+      }
+
+      .detail-right {
+        display: grid;
+        grid-template-rows: 37vh 50vh;
+
+        .detail-player-name {
+          display: grid;
+          grid-template-columns:73% 27%;
+
+          .title {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-end;
+            font-family: m-extra-bold, serif;
+            width: 100%;
+
+            .f {
+              color: #FFFFFF;
+              font-size: 5.5vw;
+              -webkit-text-stroke: 3px #{$orange};
+            }
+
+            .l {
+              margin-top: -0.2em;
+              letter-spacing: -0.05em;
+              font-size: 10vw;
+              color: #{$orange};
+            }
+
+          }
+
+          .detail-country {
+            padding: 1em;
+            font-family: mu-medium, serif;
+            margin-bottom: auto;
+            margin-top: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            img {
+              width: 75%;
+            }
+
+            div {
+              font-size: 4.5vw;
+              letter-spacing: 0.1em;
+              color: #{$blackOpacity};
+            }
+          }
+        }
+
+        .bloc {
+          .bloc-title {
+            text-transform: uppercase;
+            font-family: m-bold, serif;
+            color: #{$blackOpacity};
+            letter-spacing: 0.1em;
+          }
+
+          .value {
+            font-family: mu-bold, serif;
+            color: #{$orange};
+          }
+        }
+
+        .detail-player-info {
+          padding-top: 2em;
+          display: grid;
+          grid-template-columns:73% 27%;
+
+          .detail-player-info-left {
+            .row {
+              display: grid;
+              grid-template-columns: 10em auto auto;
+              width: 65%;
+              margin-left: auto;
+              margin-right: auto;
+              margin-bottom: 3.5em;
+
+
+            }
+          }
+
+          .detail-player-info-right {
+          }
+
+        }
+      }
+
+
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .detail-main {
+    .detail-paper {
+      border: 8px solid red;
+
+      .crop {
+        display: none;
+        border: 3px solid yellow;
+        position: absolute;
+      }
+
+      .detail-right {
+        width: 80vw;
+        border: 2px solid blue;
+
+        .detail-player-name {
+          .title {
+            background-color: #edb06f;
+            .f{
+              font-size: 4vw;
+            }
+            font-size: smaller;
+          }
+        }
+      }
+    }
+
+
+  }
 }
