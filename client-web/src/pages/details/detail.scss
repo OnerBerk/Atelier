@@ -148,29 +148,43 @@
 }
 
 @media only screen and (max-width: 900px) {
+
   .detail-main {
     .detail-paper {
-      border: 8px solid red;
-
       .crop {
-        display: none;
-        border: 3px solid yellow;
-        position: absolute;
-      }
-
-      .detail-right {
-        width: 80vw;
-        border: 2px solid blue;
-
-        .detail-player-name {
-          .title {
-            background-color: #edb06f;
-            .f{
-              font-size: 4vw;
-            }
-            font-size: smaller;
-          }
+        img{
+          z-index: -1;
         }
+      }
+      .detail-right {
+        position: absolute;
+        width: 100%;
+        .detail-player-name{
+          height: 20vh;
+          display: grid;
+          align-items: center;
+          justify-content: center;
+          grid-template-rows: 10vh auto;
+          position: relative;
+          .title{
+            position: absolute;
+            text-align: center;
+            top: 0;
+          }
+          .detail-country{
+            position: absolute;
+            display: flex;
+            right: 0;
+            top: 0;
+            img{
+              height: 10vh;
+              width: 20%;
+            }
+          }
+
+
+        }
+
       }
     }
 
