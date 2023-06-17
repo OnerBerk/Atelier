@@ -1,0 +1,20 @@
+.players-main{
+  width: 100%;
+  padding-left: 7.5vw;
+  display: grid;
+  grid-auto-rows: 20vh 80vh;
+
+  .search-container{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 69%;
+    padding-bottom: 2em;
+    margin-bottom: 1em;
+  }
+  .players{
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 69%;
+  }
+}

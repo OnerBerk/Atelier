@@ -1,0 +1,19 @@
+@import "../../bases";
+
+.home-main {
+  height: 100vh;
+  background-image: linear-gradient(to bottom, #cd8048, #d68e55, #de9c62, #e7a970, #efb77e);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  .home-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    img {
+      width: 75%;
+    }
+  }
+}

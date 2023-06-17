@@ -1,6 +1,71 @@
-.player-card-main {
-  border: 1px solid red;
-  width: 30vw;
-  height: 10vh;
+@import "../../../bases";
 
+.player-card-main {
+  width: 100%;
+  height: 18vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background-color: #FFFFFF;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  margin-bottom: 2.2vh;
+  border-radius: 1px;
+  cursor: pointer;
+
+  .img-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    object-position: center bottom;
+
+    img {
+      top: 0;
+      position: absolute;
+      width: 27vh;
+    }
+  }
+
+  .player-infos {
+    font-family: m-bold, serif;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+
+    .player-name {
+      color: #{$orange};
+      height: 9vh;
+      display: flex;
+      align-items: center;
+      font-size: 1.2vw;
+      padding-left: 1em;
+    }
+
+    .info {
+      font-size: 0.8vw;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 8vh;
+      padding-left: 1em;
+      padding-right: 1em;
+      .detail{
+        display: flex;
+        flex-direction: column;
+        span:first-child{
+          font-family: mu-bold, serif;
+          color: #{$blackOpacity};
+          letter-spacing: 0.15em;
+        }
+        span:last-child{
+          color: #{$orange};
+          font-weight: bold;
+        }
+      }
+
+    }
+  }
 }

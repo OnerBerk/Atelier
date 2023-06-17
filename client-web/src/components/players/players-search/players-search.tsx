@@ -8,7 +8,10 @@ type PlayerSearchProps = {
 const PlayersSearch = ({search, setSearch}: PlayerSearchProps) => {
     const handleChange = (e: any) => setSearch(e.target.value);
     return (
-        <input onChange={handleChange} value={search} type='text'/>
+        <input
+            placeholder='Rechercher un joueur'
+            className="player-search"
+            onChange={handleChange} value={search} type='text'/>
     )
 }
 export default PlayersSearch
