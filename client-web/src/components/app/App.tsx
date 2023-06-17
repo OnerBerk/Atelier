@@ -1,11 +1,6 @@
 import React from 'react';
-import './App.scss';
-function App() {
-  return (
-    <div className="App">
+import PRoutes from "../../routeur/p-routes";
 
-    </div>
-  );
-}
+const App = () => <PRoutes/>
 
 export default App;
